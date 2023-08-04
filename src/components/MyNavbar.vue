@@ -39,6 +39,9 @@ export default {
       stateCollapse: false,
     }
   },
+  mounted(){
+    console.clear()
+  },
   methods: {
     changeStateCollapse() {
       this.stateCollapse = !this.stateCollapse

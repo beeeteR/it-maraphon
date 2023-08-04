@@ -1,6 +1,6 @@
 <template>
   <my-navbar></my-navbar>
-  <router-view />
+  <router-view class="pages" />
   <div class="back__circles">
     <back-circle :up="true"></back-circle>
     <back-circle></back-circle>
@@ -34,13 +34,19 @@ body {
   background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(18, 27, 62, 0.00) 0%, rgba(8, 12, 21, 0.50) 100%), linear-gradient(0deg, #121B3E 0%, #121B3E 100%), #FFF;
 }
 
+.pages {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
 .back__circles {
   position: relative;
   z-index: -1;
 }
 
 .container {
-
   margin: 86px 10px 0px;
 
   @media screen and (min-width: 576px) {
@@ -58,4 +64,5 @@ body {
   @media screen and (min-width: 1400px) {
     margin: 90px 212px 0px;
   }
-}</style>
+}
+</style>
