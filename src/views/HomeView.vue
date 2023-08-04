@@ -56,7 +56,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 175px;
+  margin-bottom: 30vh;
 
   .toc {
     max-width: 810px;

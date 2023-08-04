@@ -27,6 +27,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 
     @media screen and (min-width: 320px) {
         margin-top: 15px;
@@ -46,7 +47,8 @@ export default {
     .vert__line {
         position: relative;
         width: 1px;
-        height: 166px;
+        height: 100%;
+        min-height: 166px;
         background: linear-gradient(180deg, #6197FF 0%, #314373 60%);
     }
 }

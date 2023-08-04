@@ -34,5 +34,9 @@ export default {
     @media screen and (min-width: 961px) {
         display: flex;
     }
+
+    @media screen and (max-height: 360px) {
+        display: none;
+    }
 }
 </style>
